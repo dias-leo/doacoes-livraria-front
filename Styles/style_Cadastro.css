@@ -1,69 +1,87 @@
+.form-page {
+    padding-top: 56px;
+    max-width: 520px;
+}
 
-/* Caixa central */
-form {
- 
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(10px);
- 
-    width: 450px;
-    padding: 30px;
-    height: 600px;
-    border-radius: 20px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
- 
+.form-intro {
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.form-intro h1 {
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    margin-bottom: 12px;
+}
+
+.form-intro p {
+    font-size: 16px;
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.form-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 36px;
+}
+
+.form-card form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 18px;
 }
- 
-form p {
-    margin: 0 0 10px;
-    text-align: center;
-    color: white;
-    font-size: 22px;
-    font-weight: bold;
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
 }
- 
-input {
-    padding: 12px;
-    border: none;
+
+.field label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--ink);
+}
+
+.form-card input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid var(--border);
     border-radius: 10px;
+    background: var(--surface-soft);
     outline: none;
     font-size: 15px;
-}
- 
-button {
-    padding: 12px;
-    border: none;
-    border-radius: 10px;
-    background: #4a90e2;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
-}
- 
-button:hover {
-    background: #357abd;
-}
- 
-.teste button{
-    position: absolute;
-    top: 770px;
-    left: 45%;
+    font-family: var(--sans);
+    color: var(--ink);
+    transition: border-color 0.2s, box-shadow 0.2s;
 }
 
+.form-card input::placeholder {
+    color: #9a9286;
+}
 
+.form-card input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(192, 73, 47, 0.15);
+}
 
-.overlay a {
+.form-card .btn {
+    margin-top: 6px;
+    width: 100%;
+}
+
+.msg-status {
     text-align: center;
-    color: #f7f5f5d2;
-    font-size: 16px;
+    margin: 4px 0 0;
+    font-size: 14px;
+    font-weight: 500;
 }
 
- 
-.overlay a:hover {
-    color: #6785e8f6;
-   
-
+.form-footer-link {
+    text-align: center;
+    margin: 20px 0 0;
+    font-size: 14px;
+    color: var(--muted);
 }

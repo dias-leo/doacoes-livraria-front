@@ -3,96 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Styles/style_Home.css">
     <link rel="stylesheet" href="../Styles/style_principal.css">
-
-    <title>Home page</title>
-
+    <link rel="stylesheet" href="../Styles/style_Home.css">
+    <title>Início | Biblioteca Comunitária</title>
 </head>
 <body>
-   
-     <div class="overlay">
 
-    <!-- TOPO -->
-    <header>
-      <div class="search-box">
-        
-        <input type="text" id="busca"  placeholder="Pesquisar livros..." />
-        <button onclick="location.href='acervo.html?busca=' + document.getElementById('busca').value">Pesquisar</button>
-      
-      </div>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a class="brand" href="Home.html">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+            </svg>
+            Biblioteca Comunitária
+        </a>
+        <ul class="nav-links">
+            <li><a href="Home.html" class="active">Início</a></li>
+            <li><a href="acervo.html">Acervo</a></li>
+            <li><a href="Doacao.html">Doar</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
 
-      <div class="icon-menu">
-        <i class="fa-solid fa-book"></i>
-      </div>
+    <!-- HERO -->
+    <header class="hero">
+        <div class="container">
+            <span class="eyebrow">Biblioteca pública digital</span>
+            <h1>Explore conhecimento sem limites</h1>
+            <p class="hero-sub">
+                Um espaço acolhedor para descobrir livros, compartilhar leituras e
+                fortalecer o acesso à cultura na sua comunidade.
+            </p>
+
+            <div class="search-box">
+                <input type="text" id="busca" placeholder="Pesquisar livros, autores..." />
+                <button class="btn" onclick="location.href='acervo.html?busca=' + encodeURIComponent(document.getElementById('busca').value)">Pesquisar</button>
+            </div>
+
+            <div class="sugestao">
+                <span>Sugestão da vez:</span>
+                <strong id="titulo-sugestao"></strong>
+                <em id="autor-sugestao"></em>
+            </div>
+        </div>
     </header>
 
-    <!-- TEXTO CENTRAL -->
-    <main>
-        <div class="text-center">
-      <h1>Explore conhecimento sem limites</h1>
-      
-      </div>
+    <!-- CARDS -->
+    <main class="container">
+        <section class="cards">
+            <article class="card">
+                <h2>Consulte nosso acervo</h2>
+                <p>Explore livros, autores e conteúdos disponíveis em nossa biblioteca pública digital.</p>
+                <a class="btn btn-outline" href="acervo.html">Ver acervo</a>
+            </article>
+
+            <article class="card card-accent">
+                <h2>Tem algum livro juntando poeira?</h2>
+                <p>Faça uma doação e ajude a enriquecer nosso acervo, levando mais conhecimento para toda a comunidade.</p>
+                <a class="btn" href="Doacao.html">Doar um livro</a>
+            </article>
+
+            <article class="card">
+                <h2>Faça parte</h2>
+                <p>Crie sua conta para reservar livros e acompanhar suas leituras na biblioteca.</p>
+                <a class="btn btn-outline" href="cadastro.html">Cadastrar-se</a>
+            </article>
+        </section>
+
+        <!-- SOBRE NÓS -->
+        <section class="sobre-nos">
+            <h2>Sobre nós</h2>
+            <p>
+                Nossa biblioteca pública é um espaço dedicado ao conhecimento, à cultura e ao incentivo à leitura.
+                Buscamos oferecer um ambiente acolhedor e acessível para toda a comunidade, proporcionando acesso
+                à informação, aprendizado e desenvolvimento pessoal.
+            </p>
+            <p>
+                Com um acervo diversificado e pensado para leitores de todas as idades, acreditamos que a leitura
+                é uma ferramenta capaz de transformar vidas, despertar ideias e aproximar pessoas. Nosso objetivo
+                é incentivar o hábito da leitura e tornar o conhecimento cada vez mais acessível para todos.
+            </p>
+        </section>
     </main>
 
-    <div class="sugestao">
+    <footer class="site-footer">
+        Biblioteca Comunitária &middot; Conhecimento aberto para todos
+    </footer>
 
-    <h2>Sugestão da vez:</h2>
-
-    <h3 id="titulo-sugestao"></h3>
-
-    </div>
-    
-    <div class="registration-box">
-      <img src="../Resources/login.png" alt="imagem login">
-        <button onclick="window.open('../Models/cadastro.html', '_blank')">Cadastro</button>
-    </div>
-
-    <div class="acervo-box">
-    <h2>Consulte nosso acervo aqui</h2>
-    <p>
-        Explore livros, autores e conteúdos disponíveis em nossa biblioteca pública digital.
-    </p>
-    <button onclick="window.open('../Models/acervo.html', '_blank')">Ver Acervo</button>
-
-</div>
-
-<div class="donation-box">
-    <h2>Tem algum livro juntando poeira?</h2>
-    <p>
-        faça uma doação para nossa biblioteca e ajude a enriquecer nosso acervo, proporcionando acesso a mais conhecimento para toda a comunidade.
-    </p>
-        
-    <button onclick="window.open('../Models/Doacao.html', '_blank')">Doar</button>
-
-</div>
-
-    <section class="sobre-nos">
-
-    <h1>Sobre Nós</h1>
-
-    <p>
-        Nossa biblioteca pública é um espaço dedicado ao conhecimento, à cultura e ao incentivo à leitura. 
-        Buscamos oferecer um ambiente acolhedor e acessível para toda a comunidade, proporcionando acesso 
-        à informação, aprendizado e desenvolvimento pessoal.
-
-        Com um acervo diversificado e um ambiente pensado para leitores de todas as idades, acreditamos 
-        que a leitura é uma ferramenta capaz de transformar vidas, despertar ideias e aproximar pessoas.
-
-        Nosso objetivo é incentivar o hábito da leitura e tornar o conhecimento cada vez mais acessível 
-        para todos.
-    </p>
-
-</section>
-
-
-  </div>
-
-  
-
-  <script src="../Scripts/home.js"></script>
-  
-    
-
+    <script src="../Scripts/home.js"></script>
 </body>
 </html>
