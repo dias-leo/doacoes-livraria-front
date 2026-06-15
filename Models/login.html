@@ -1,0 +1,31 @@
+<!DOCTYPE html> <!-- Informa que essa página utilza HTML 5-->
+<html lang="pt-BR"> <!--Elemento raiz da página do HTML-->
+<head> <!--Contém informações da tela-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title> <!--Define o texto da aba do navegador-->
+    <link rel="stylesheet" href="../Styles/style_login.css">
+</head>
+<body><!--Tudo o que o usuário vê, fica aqui-->
+    <h1>Login</h1>
+    <div class="Box_Login">
+    <form id="frmPrincipal">
+        <!--Criei um campo e-mail-->
+        <!--Disse que esse campo é do tipo e-mail e que é obrigatório(required)-->
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email"  placeholder="Informe o seu E-mail" >
+            <br><br><!--Quebra de linha-->
+        <label for="cpf">CPF:</label>
+        <input type="password" name="cpf" id="cpf" placeholder="Informe o seu CPF">
+            <br><br>
+        <button  type="submit"  id="btnEntrar">Entrar</button>
+        <p id="mensagemErro"></p>
+        
+        <a href="../Models/cadastro.html"> Cadastre-se</a>
+    </form>
+    </div>
+        <script src="../Scripts/storage.js"></script>
+        <script src="../Scripts/login.js"></script>
+
+</body>
+</html>

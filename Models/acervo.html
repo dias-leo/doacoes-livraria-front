@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/style_acervo.css">
+    <link rel="stylesheet" href="../Styles/style_principal.css">
+    <title>Acervo</title>
+</head>
+<body>
+    
+    <div class="overlay">  
+    <div class="search-box">
+
+    <input
+        type="text"
+        id="busca"
+        placeholder="Pesquisar livro..."
+    >
+
+    <button onclick="buscarLivros()">
+        Pesquisar
+    </button>
+
+</div>
+<div class="acervo">
+    <h1>Encontre seu próximo livro</h1>
+<div id="lista-livros"></div>
+
+<div class="paginacao">
+<button  onclick="paginaAnterior()">
+    Anterior
+</button>
+
+<button onclick="proximaPagina()">
+    Próxima
+</button>
+</div>
+</div>
+
+</div>
+
+
+
+<script src="../Scripts/storage.js"></script>
+<script src="../Scripts/acervo.js"></script>
+
+
+</body>
+</html>

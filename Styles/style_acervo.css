@@ -1,0 +1,82 @@
+
+.acervo{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#lista-livros{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+
+    
+}
+
+.livro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    width: 250px;
+    padding: 20px;
+    background: #ffffff3b;
+    border-radius: 15px;
+    color: #f7f5f5d2;
+    
+}
+
+.livro button{
+    background-color: #7f7777b2;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+}
+
+.livro button:hover{
+    background-color: #847d7d;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.paginacao {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+
+}
+
+.paginacao button {
+    background-color: #f9f6f6e1;
+    color: #191515;
+    border: 15px;
+    border-radius: 7px;
+    width: 100px;
+    height: 30px;
+}
+
+.paginacao button:hover {
+    background-color: #787777;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#ind{
+    background-color: #f9f7f790;
+    border-radius: 5px;
+    width: 120px;
+    color: #d40404f6;
+    font-weight: bold;
+}
+
+.acervo h1{
+    color: #f7f5f5d2;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}

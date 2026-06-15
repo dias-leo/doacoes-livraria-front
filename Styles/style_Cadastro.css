@@ -1,0 +1,69 @@
+
+/* Caixa central */
+form {
+ 
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+ 
+    width: 450px;
+    padding: 30px;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+ 
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+ 
+form p {
+    margin: 0 0 10px;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+ 
+input {
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+ 
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #4a90e2;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+ 
+button:hover {
+    background: #357abd;
+}
+ 
+.teste button{
+    position: absolute;
+    top: 770px;
+    left: 45%;
+}
+
+
+
+.overlay a {
+    text-align: center;
+    color: #f7f5f5d2;
+    font-size: 16px;
+}
+
+ 
+.overlay a:hover {
+    color: #6785e8f6;
+   
+
+}

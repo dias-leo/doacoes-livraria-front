@@ -1,0 +1,88 @@
+
+
+h1
+{
+    color:white ;
+    text-align: center;
+    font-size: 50px;
+}
+
+body 
+{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../Resources/ChatGPT\ Image\ 4\ de\ jun.\ de\ 2026\,\ 11_09_26.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.Box_Login
+{
+    border: 1px  solid black;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    background: rgba(56, 55, 55, 0.29);
+}
+
+input 
+{
+    background-color: #cbc8c875;
+    width: 400px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    
+}
+button
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    color: #131313f2;
+    wIdth: 100px;
+    
+    background-color: #d4d2d24e;
+}
+
+
+button:hover
+{
+    background-color: #d4d2d2;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.Box_Login a{
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #d4d2d2d3;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.Box_Login a:hover{
+    color: #d4d2d2;
+    transition: 0.3s;
+}
+
+#mensagemErro{
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}

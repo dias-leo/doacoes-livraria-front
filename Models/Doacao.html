@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doação</title>
+    <link rel="stylesheet" href="../Styles/style_principal.css">
+    <link rel="stylesheet" href="../Styles/Style_Doacao.css">
+</head>
+<body>
+    <div class="overlay">
+        <h1>Preencha as Informações para a Doação</h1>
+        <div class="Doacao">
+            <form id="frmDoacao">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Informe o seu nome">
+
+                <br><br>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Informe o seu telefone">
+
+                <br><br>
+
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" placeholder="Informe o seu E-mail">
+
+                <br><br>
+
+                <label for="tituloLivro">Título do Livro:</label>
+                <input type="text" id="tituloLivro" name="nomeLivro" placeholder="Informe o nome do livro">
+
+                <br><br>
+
+                <label for="autorLivro">Autor do Livro:</label>
+                <input type="text" id="autorLivro" name="autorLivro" placeholder="Informe o autor do livro">
+
+                <br><br>
+
+                <button type="submit">Enviar</button>
+                <p id="msgStatus"></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="../Scripts/storage.js"></script>
+    <script src="../Scripts/doacao.js"></script>
+</body>
+</html>
