@@ -3,48 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Styles/style_acervo.css">
     <link rel="stylesheet" href="../Styles/style_principal.css">
-    <title>Acervo</title>
+    <link rel="stylesheet" href="../Styles/style_acervo.css">
+    <title>Acervo | Biblioteca Comunitária</title>
 </head>
 <body>
-    
-    <div class="overlay">  
-    <div class="search-box">
 
-    <input
-        type="text"
-        id="busca"
-        placeholder="Pesquisar livro..."
-    >
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a class="brand" href="Home.html">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+            </svg>
+            Biblioteca Comunitária
+        </a>
+        <ul class="nav-links">
+            <li><a href="Home.html">Início</a></li>
+            <li><a href="acervo.html" class="active">Acervo</a></li>
+            <li><a href="Doacao.html">Doar</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
 
-    <button onclick="buscarLivros()">
-        Pesquisar
-    </button>
+    <main class="container acervo">
+        <header class="acervo-header">
+            <span class="eyebrow">Nosso acervo</span>
+            <h1>Encontre seu próximo livro</h1>
+            <div class="search-box">
+                <input type="text" id="busca" placeholder="Pesquisar livro ou autor...">
+                <button class="btn" onclick="buscarLivros()">Pesquisar</button>
+            </div>
+        </header>
 
-</div>
-<div class="acervo">
-    <h1>Encontre seu próximo livro</h1>
-<div id="lista-livros"></div>
+        <div id="lista-livros"></div>
 
-<div class="paginacao">
-<button  onclick="paginaAnterior()">
-    Anterior
-</button>
+        <div class="paginacao">
+            <button class="btn btn-outline" onclick="paginaAnterior()">Anterior</button>
+            <button class="btn btn-outline" onclick="proximaPagina()">Próxima</button>
+        </div>
+    </main>
 
-<button onclick="proximaPagina()">
-    Próxima
-</button>
-</div>
-</div>
+    <footer class="site-footer">
+        Biblioteca Comunitária &middot; Conhecimento aberto para todos
+    </footer>
 
-</div>
-
-
-
-<script src="../Scripts/storage.js"></script>
-<script src="../Scripts/acervo.js"></script>
-
-
+    <script src="../Scripts/storage.js"></script>
+    <script src="../Scripts/acervo.js"></script>
 </body>
 </html>
